@@ -66,7 +66,7 @@
                       <td>johndoe@gmail.com</td>
                       <td><a href="" data-bs-toggle="modal" data-bs-target="#detail_employee1" class="btn btn-sm w-100 btn-info">Details</a></td>
                       <td><a href="" data-bs-toggle="modal" data-bs-target="#edit_employee1" class="btn btn-sm w-100 btn-info btn-warning">Edit</a></td>
-                      <td><a href="" class="btn btn-sm w-100 btn-info btn-danger">Delete</a></td>
+                      <td><a href="" data-bs-toggle="modal" data-bs-target="#delete_employee1" class="btn btn-sm w-100 btn-info btn-danger" onclick="confirm('Are you sure to delete \'John Doe\' ?')">Delete</a></td>
                   </tr>
                   <tr>
                       <td>2</td>
@@ -188,13 +188,13 @@
 
   <!-- Details Modal -->
 
-  <!-- Edit Modal -->
+  <!-- Employee Edit Modal -->
 
   <div class="modal fade" id="edit_employee1" tabindex="-1" aria-labelledby="edit_employee1" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="details_employee1">Edit Details</h5>
+          <h5 class="modal-title" id="edit_employee1">Edit Details</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -228,7 +228,8 @@
     </div>
   </div>
 
-  <!-- Edit Modal -->
+  <!-- Employee Edit Modal -->
+
       <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
